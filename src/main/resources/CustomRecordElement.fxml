@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="118.0" prefWidth="295.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #c8e3e1;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+         <children>
+            <TextField fx:id="name" layoutX="5.0" layoutY="2.0" prefHeight="54.0" prefWidth="250.0" promptText="name" stylesheets="@disabledStyle.css" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="phone" layoutX="5.0" layoutY="59.0" prefHeight="54.0" prefWidth="250.0" promptText="phone" stylesheets="@disabledStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="deleteIcon" fitHeight="24.0" fitWidth="24.0" layoutX="263.0" layoutY="2.0" onMouseClicked="#deleteElem" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="8.0">
+               <image>
+                  <Image url="@icon_delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="enableUpdateIcon" fitHeight="24.0" fitWidth="24.0" layoutX="263.0" layoutY="42.0" onMouseClicked="#enableUpdate" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="8.0">
+               <image>
+                  <Image url="@icon_editing.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="updateIcon" disable="true" fitHeight="24.0" fitWidth="24.0" layoutX="263.0" layoutY="82.0" onMouseClicked="#update" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.rightAnchor="8.0">
+               <image>
+                  <Image url="@icon_ok-mark.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</fx:root>
